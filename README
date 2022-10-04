@@ -1,0 +1,29 @@
+# Purpose
+This tool allows you to connect to quantic-telecom captive portal with one click !
+
+# How-to ?
+On the right side of github, click on the **Releases** section.
+Download the jar file from the latest release.
+Run the executable:
+```
+java -jar .\quanticconnect-no-ui-1.0-SNAPSHOT.jar
+```
+
+It creates a file in quantic_connect_config/config.txt.
+Fill it:
+```
+EMAIL=myEmail
+PASSWORD=myPassword
+URL=https://www.quantic-telecom.net/connexion-reseau
+```
+
+Now everytime you execute the jar file, it will reconnect you to quantic-telecom.net ! Just re-execute the following command:
+```
+java -jar .\quanticconnect-no-ui-1.0-SNAPSHOT.jar
+```
+It is normal for javascript errors to appear. The script continue to be executed so don't worry about it.
+
+# Tech stack
+Java 1.8 (8)
+Maven
+htmlunit 2.65.1
